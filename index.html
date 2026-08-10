@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Fjalla+One&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Skranji:wght@400;700&family=Smooch+Sans:wght@100..900&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <!--FOR ANIMATION-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <title>BREW</title>
+</head>
+<body>
+        <header class="logo-container">
+            <div class="logo-right">
+                <a href="#home">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                </a>
+                <p>COFFEE BREAK</p>
+            </div>
+
+            <div class="logo-center">
+                <a href="#" onclick="showPage('coffee')">Menu</a>
+                <a href="#" onclick="showPage('bakery')">Bakery</a>
+                <a href="#story" >Our Story</a>
+                <a href="#contacts" >Location</a>
+            </div>
+
+            <div class="logo-left">
+                <a href="#" onclick="showPage('coffee')">Order Online</a>
+            </div>
+        </header>
+
+        
+        <section class="hero" id="home">
+            <div class="qoute">
+                   <h2>Crafted Coffee 
+                    & Coze Moments
+                </h2>
+                <p>Artisan Coffee, Handcrafted beverage, fresh bakery items,
+                     and warm cafe experiences design for
+                    coffee lovers.</p>
+                   <a href="#" onclick="showPage('coffee')">Explore Menu</a>
+            </div>
+        </section>
+
+        <section class="main-container" data-aos="fade-up">
+            <div class="cards-main">
+                <div class="card coffee">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h2>Coffee</h2>
+                    <p>Espresso coffee, handcrafted beverage, to coffee lovers.</p>
+                    <a href="#" onclick="showPage('coffee')">Learn More</a>
+                </div>
+
+                <div class="card bread">
+                    <i class="fa-solid fa-bread-slice"></i>
+                    <h2>Bread</h2>
+                    <p>Artisan coffeed, handcrafted beverages, fresh bakery items.</p>
+                    <a href="#" onclick="showPage('bakery')">Learn More</a>
+                </div>
+
+                <div class="card drinks">
+                    <i class="fa-solid fa-glass-water"></i>
+                    <h2>Special Drink</h2>
+                    <p>Specially drinks to cocon cocktail ar al brom deliveras.</p>
+                    <a href="#" onclick="showPage('coffee')">Learn More</a>
+                </div>
+            </div>
+            <hr>
+
+            <!--OUR STORY-->
+            <div id="story">
+                    <div class="story-container">
+                        <div>
+                            <img src="images/our-story.jpg" alt="story">
+                        </div>
+                        <div class="our-story">
+                            <h2>OUR STORY</h2>
+                            <h3>More Than Just Coffee</h3>
+                            <p>Our story began with a simple idea: create a place where
+                                good coffee brings people together.</p>
+                            <p>What started as a passion for freshly brewed coffee grew into a cozy
+                                little space where friends can catch up, families can slow down, and 
+                                anyone can enjoy a quiet moment with a cup in hand.</p>
+                            <p>We believe coffee is more than just a drink. It is part of conversations,
+                                celebrations, early mornings, late nights, and the little moments that make each
+                                day special.</p>
+                            <p>Every cup we serve is made with care, using thoughtfully selected beans and a commitment
+                                to quality. Alongside our coffee, we offer freshly baked treats made to make your visit even
+                                better.</p>
+                            <p>Whether you're here for your morning coffee, meeting a friend, getting some work done, or simply
+                                taking a break from the day, we're happy to have you here.</p>
+                            <p>Come in, take a seat, and make yourself at home.</p>
+                            <p1>Good coffee. Good food. Good moments.</p1>
+                            
+                        </div>
+                    </div>
+            </div>
+            
+            <hr>
+
+        </section>
+
+        <footer class="contact-container">
+                <div class="coffee-qoute">
+                    <h2>✨☕Coffee Break</h2>
+                    <p>A cozy spot for coffee lovers to relax, recharge, and enjoy freshly brewed drinks and delicious treats. Whether you need a quick boost or a peaceful break, Coffee Break is here to make every sip special.</p>
+                </div>
+                <div class="contact-details" id="contacts">
+                    <h2>Get In Touch</h2>
+                    <div>
+                        <span>Adress: </span>
+                        <span>24th Ave. San Antonio 123, Coffee Break</span>
+                    </div>
+                    <div>
+                        <span>Email: </span>
+                        <span>info@gmail.com</span>
+                    </div>
+                    <div>
+                        <span>Phone: </span>
+                        <span>+63 123 456 789</span>
+                    </div>
+                </div>
+                <div class="socials">
+                    <h2>Socials</h2>
+                    <div class="links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+        </footer>
+
+        <!--COFFEE MENU-->
+        <div class="menu-container" id="coffee">
+                <div class="card-coffee">
+                    <div class="box-coffee">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="searchInput" placeholder="Search coffee..">
+                        </div>
+                       <button class="close-btn" onclick="closePage()">
+                            <i class="fa-solid fa-xmark"></i>
+                       </button>
+                    </div>
+                    <hr>
+                    <div class="grid-list">
+                        <div class="coffee-list">
+                            <button>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p>Likes</p>
+                            </button>
+                            <div class="details">
+                                <img src="images/espre.png" alt="coffee">
+                                <h2>ESPRESSO</h2>
+                            </div>
+                            <div class="buy-now">
+                                <p>$20.00</p>
+                                <a class="buy-btn" onclick="event.stopPropagation(); addToCart('ESPRESSO', 20)">
+                                    BUY NOW
+                                </a>
+                            </div>
+                        </div> 
+                        
+                        <div class="coffee-list">
+                            <button>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p>Likes</p>
+                            </button>
+                            <div class="details">
+                                <img src="images/espre.png" alt="coffee">
+                                <h2>AMERICANO</h2>
+                            </div>
+                            <div class="buy-now">
+                                <p>$17.00</p>
+                                <a class="buy-btn" onclick="event.stopPropagation(); addToCart('AMERICANO', 17)">
+                                    BUY NOW
+                                </a>
+                            </div>
+                        </div> 
+                        
+                        <div class="coffee-list">
+                            <button>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p>Likes</p>
+                            </button>
+                            <div class="details">
+                                <img src="images/espre.png" alt="coffee">
+                                <h2>CAPPUCCINO</h2>
+                            </div>
+                            <div class="buy-now">
+                                <p>$19.00</p>
+                                <a class="buy-btn" onclick="event.stopPropagation(); addToCart('CAPPUCCINO', 19)">
+                                    BUY NOW
+                                </a>
+                            </div>
+                        </div> 
+                        
+                        <div class="coffee-list">
+                            <button>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p>Likes</p>
+                            </button>
+                            <div class="details">
+                                <img src="images/espre.png" alt="coffee">
+                                <h2>LATTE</h2>
+                            </div>
+                            <div class="buy-now">
+                                <p>$20.00</p>
+                                <a class="buy-btn" onclick="event.stopPropagation(); addToCart('LATTE', 20)">
+                                    BUY NOW
+                                </a>
+                            </div>
+                        </div> 
+                        
+                        <div class="coffee-list">
+                            <button>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p>Likes</p>
+                            </button>
+                            <div class="details">
+                                <img src="images/espre.png" alt="coffee">
+                                <h2>MOCHA</h2>
+                            </div>
+                            <div class="buy-now">
+                                <p>$18.00</p>
+                                <a class="buy-btn" onclick="event.stopPropagation(); addToCart('MOCHA', 18)">
+                                    BUY NOW
+                                </a>
+                            </div>
+                        </div> 
+
+
+                    </div>
+                </div>
+            </div>
+
+            
+            <!--BAKERY-->
+             <div class="bakery-container" id="bakery">
+                <div>
+                    <div class="card-bakery">
+                        <div class="search-close">
+                            <div class="search-bakery">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="searchInputBakery" placeholder="Search beverage..">
+                            </div>
+                        </div>
+                        <div>
+                            <button class="close-bakery" onclick="closePage()">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                <div class="bakery-grid">
+                    <div class="bakery-list">
+                                    <button>
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        <p>Likes</p>
+                                    </button>
+                                    <div class="bakery-details">
+                                        <img src="images/bread.png" alt="coffee">
+                                        <h2>CUP CAKE</h2>
+                                    </div>
+                                    <div class="bakery-buy">
+                                        <p>$14.00</p>
+                                        <a class="buy-btn" onclick="event.stopPropagation(); addToCart('CUP CAKE', 14)">
+                                            BUY NOW
+                                        </a>
+                                    </div>
+                    </div>
+                    
+                    <div class="bakery-list">
+                                    <button>
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        <p>Likes</p>
+                                    </button>
+                                    <div class="bakery-details">
+                                        <img src="images/bread.png" alt="coffee">
+                                        <h2>BAGEL</h2>
+                                    </div>
+                                    <div class="bakery-buy">
+                                        <p>$14.00</p>
+                                        <a class="buy-btn" onclick="event.stopPropagation(); addToCart('BAGEL', 14)">
+                                            BUY NOW
+                                        </a>
+                                    </div>
+                    </div>
+                    
+                    <div class="bakery-list">
+                                    <button>
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        <p>Likes</p>
+                                    </button>
+                                    <div class="bakery-details">
+                                        <img src="images/bread.png" alt="coffee">
+                                        <h2>APPLE TART</h2>
+                                    </div>
+                                    <div class="bakery-buy">
+                                        <p>$20.00</p>
+                                        <a class="buy-btn" onclick="event.stopPropagation(); addToCart('APPLE TART', 20)">
+                                            BUY NOW
+                                        </a>
+                                    </div>
+                    </div>
+                    
+                    <div class="bakery-list">
+                                    <button>
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        <p>Likes</p>
+                                    </button>
+                                    <div class="bakery-details">
+                                        <img src="images/bread.png" alt="coffee">
+                                        <h2>CROISSANT</h2>
+                                    </div>
+                                    <div class="bakery-buy">
+                                        <p>$20.00</p>
+                                        <a class="buy-btn" onclick="event.stopPropagation(); addToCart('CROISSANT', 14)">
+                                            BUY NOW
+                                        </a>
+                                    </div>
+                    </div>
+
+                    <div class="bakery-list">
+                                    <button>
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        <p>Likes</p>
+                                    </button>
+                                    <div class="bakery-details">
+                                        <img src="images/bread.png" alt="coffee">
+                                        <h2>CINNABON</h2>
+                                    </div>
+                                    <div class="bakery-buy">
+                                        <p>$25.00</p>
+                                        <a class="buy-btn" onclick="event.stopPropagation(); addToCart('CINNABON', 25)">
+                                            BUY NOW
+                                        </a>
+                                    </div>
+                    </div>
+
+                    <div class="bakery-list">
+                                    <button>
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        <p>Likes</p>
+                                    </button>
+                                    <div class="bakery-details">
+                                        <img src="images/bread.png" alt="coffee">
+                                        <h2>MOCHA BROWNIE</h2>
+                                    </div>
+                                    <div class="bakery-buy">
+                                        <p>$18.00</p>
+                                        <a class="buy-btn" onclick="event.stopPropagation(); addToCart('MOCHA BROWNIE', 18)">
+                                            BUY NOW
+                                        </a>
+                                    </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="cartMenu" class="cart-menu">
+
+            <button class="close-cart" onclick="closeCart()">✕</button>
+
+            <h2>🛒 Your Cart</h2>
+
+            <div id="cartItems"></div>
+
+            <div class="cart-total">
+                <strong>Total:</strong>
+                <span id="cartTotal">$0.00</span>
+            </div>
+
+            <button class="checkout-btn" onclick="checkout()">
+                CHECKOUT
+            </button>
+
+        </div>
+
+        <!-- Thank You Popup -->
+        <div id="thankYouPopup" class="thank-you-popup">
+
+            <div class="thank-you-box">
+
+                <div class="thank-you-icon">☕</div>
+
+                <h2>Thank You!</h2>
+
+                <p>Your order has been placed successfully.</p>
+
+                <button onclick="closeThankYou()">OK</button>
+
+            </div>
+
+        </div>
+
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js""></script>
+        <script src="index.js"></script>
+
+        <script>
+                AOS.init({
+                    duration: 1000,
+                    once:false,
+                    easing: "ease-out"
+                });
+        </script>
+</body>
+</html>
